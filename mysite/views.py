@@ -1,9 +1,9 @@
 from django.shortcuts import render
 
 
-def home(request):
+def home_page(request):
     return render(request, 'index.html')
 
 
-def courses(request):
+def courses_page(request):
     return render(request, 'courses.html')
