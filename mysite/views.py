@@ -21,8 +21,8 @@ def contact_view(request):
             message = request.POST.get('message')
 
             send_mail(
-                "Welcome!",
-                f'{name} is new user! His/her email: {email} \nMessage:\n{message}',
+                "New client",
+                f'{name} is our new client! \nEmail: {email} \n\nMessage:\n{message}',
                 'rucodinger@yandex.ru',
                 ['rucodinger@gmail.com'],
                 fail_silently=False,
