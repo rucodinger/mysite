@@ -30,3 +30,4 @@ def contact_view(request):
 
             return render(request, 'form_success.html')
     return render(request, 'contact.html')
+#test
