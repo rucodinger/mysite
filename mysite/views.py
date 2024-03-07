@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.core.mail import send_mail
 from .forms import ContactForm
 
@@ -28,5 +28,9 @@ def contact_view(request):
                 fail_silently=False,
             )
 
-            return render(request, 'form_success.html')
+            return redirect('form_success')
     return render(request, 'contact.html')
+
+
+def form_success(request):
+    return render(request, 'form_success.html')
