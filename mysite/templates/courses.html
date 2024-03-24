@@ -44,7 +44,14 @@
             
             <!-- Search Bar -->
             <div class="input-group mb-3">
-                <input type="text" id="courseSearch" class="form-control search-input" placeholder="Search for courses..." aria-label="Search for courses..." onkeypress="handleKeyPress(event)">
+                <input
+                        type="text"
+                        id="courseSearch"
+                        class="form-control search-input"
+                        placeholder="Search for courses..."
+                        aria-label="Search for courses..."
+                        oninput="searchCourses()"
+                >
             </div>
             
 
